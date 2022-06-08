@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://mateus-luiz.github.io/my-gallery/">
       Solution
     </a>
     <span> | </span>
@@ -36,7 +36,8 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://user-images.githubusercontent.com/59563143/172729290-69f41679-c2ec-40a1-8cc0-5f3963fd2f8b.svg)
+
 
 ### Built With
 
