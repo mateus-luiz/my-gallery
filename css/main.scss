@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$main-font: "Montserrat", sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+}
+
+header{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+
+    img{
+        width: 130px;
+        border-radius: 8px;
+    }
+
+    h1{
+        font-size: 24px;
+        font-weight: 600;
+        font-style: normal;
+        color: #4E5150;
+    }
+
+    h2{
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        color: #A9A9A9;
+    }
+
+}
+
+section.perfil-info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 67px;
+        background-color: #E5E5E5;
+        margin: 0 15px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 8px;
+
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+            color: #4E5150;
+        }
+
+        p{
+            font-size: 14px;
+            font-weight: 600;
+            font-style: normal;
+            color: #BDBDBD;
+        }
+    }
+}
+
+section.gallery{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;    
+    
+    div.grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        margin: 0 auto;
+        padding: 10px;
+
+        div{
+            width: 300px;
+            height: 300px;
+            border-radius: 8px;
+            margin: 5px;
+            box-shadow: 2px 2px 8px #E5E5E5;
+        }
+
+        div.photo1{
+            background: url(../images/photo1.png) no-repeat;
+            background-size: cover;
+        }
+        
+        div.photo2{
+            width: 600px;
+            grid-column: 2 / 4;
+            background: url(../images/photo2.png) no-repeat;
+            background-size: cover;
+        }
+
+        div.photo3{
+            width: 600px;
+            grid-column: 1 / 3;
+            background: url(../images/photo3.png) no-repeat;
+            background-size: cover;
+        }
+
+        div.photo4{
+            height: 600px;
+            grid-column: 3;
+            grid-row: 2 / 4;
+            background: url(../images/photo4.png) no-repeat;
+            background-size: cover;
+        }
+
+        div.photo5{
+            background: url(../images/photo5.png) no-repeat;
+            background-size: cover;
+        }
+
+        div.photo6{
+            background: url(../images/photo6.png) no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+footer{
+    color: #B9BDCF;
+    text-align: center;
+    margin: 30px auto;
+    a{
+        text-decoration: none;
+        color: #4E5150;
+    }
+}
+
+@media only screen and (min-width: 790px)and (max-width: 930px){
+    section.gallery{
+        display: flex;
+        
+        div.grid{
+            div{
+                width: 250px;
+                height: 250px;
+            }
+
+            div.photo2{
+                width: 500px;
+            }
+    
+            div.photo3{
+                width: 500px;
+            }
+    
+            div.photo4{
+                height: 500px;
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 495px) and (max-width: 789px){
+    section.gallery{
+        display: flex;
+        
+        div.grid{
+            div{
+                width: 150px;
+                height: 150px;
+            }
+
+            div.photo2{
+                width: 300px;
+            }
+    
+            div.photo3{
+                width: 300px;
+            }
+    
+            div.photo4{
+                height: 300px;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 494px){
+    section.gallery{
+        display: flex;
+        
+        div.grid{
+            div{
+                width: 100px;
+                height: 100px;
+            }
+
+            div.photo2{
+                width: 200px;
+            }
+    
+            div.photo3{
+                width: 200px;
+            }
+    
+            div.photo4{
+                height: 200px;
+            }
+
+        }
+    }
+}

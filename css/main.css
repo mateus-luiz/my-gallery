@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 130px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  color: #4E5150;
+}
+
+header h2 {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #A9A9A9;
+}
+
+section.perfil-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.perfil-info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100px;
+  height: 67px;
+  background-color: #E5E5E5;
+  margin: 0 15px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+}
+
+section.perfil-info div h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  color: #4E5150;
+}
+
+section.perfil-info div p {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #BDBDBD;
+}
+
+section.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px;
+}
+
+section.gallery div.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+section.gallery div.grid div {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  margin: 5px;
+  -webkit-box-shadow: 2px 2px 8px #E5E5E5;
+          box-shadow: 2px 2px 8px #E5E5E5;
+}
+
+section.gallery div.grid div.photo1 {
+  background: url(../images/photo1.png) no-repeat;
+  background-size: cover;
+}
+
+section.gallery div.grid div.photo2 {
+  width: 600px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  background: url(../images/photo2.png) no-repeat;
+  background-size: cover;
+}
+
+section.gallery div.grid div.photo3 {
+  width: 600px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  background: url(../images/photo3.png) no-repeat;
+  background-size: cover;
+}
+
+section.gallery div.grid div.photo4 {
+  height: 600px;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+  background: url(../images/photo4.png) no-repeat;
+  background-size: cover;
+}
+
+section.gallery div.grid div.photo5 {
+  background: url(../images/photo5.png) no-repeat;
+  background-size: cover;
+}
+
+section.gallery div.grid div.photo6 {
+  background: url(../images/photo6.png) no-repeat;
+  background-size: cover;
+}
+
+footer {
+  color: #B9BDCF;
+  text-align: center;
+  margin: 30px auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4E5150;
+}
+
+@media only screen and (min-width: 790px) and (max-width: 930px) {
+  section.gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.gallery div.grid div {
+    width: 250px;
+    height: 250px;
+  }
+  section.gallery div.grid div.photo2 {
+    width: 500px;
+  }
+  section.gallery div.grid div.photo3 {
+    width: 500px;
+  }
+  section.gallery div.grid div.photo4 {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 495px) and (max-width: 789px) {
+  section.gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.gallery div.grid div {
+    width: 150px;
+    height: 150px;
+  }
+  section.gallery div.grid div.photo2 {
+    width: 300px;
+  }
+  section.gallery div.grid div.photo3 {
+    width: 300px;
+  }
+  section.gallery div.grid div.photo4 {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 494px) {
+  section.gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.gallery div.grid div {
+    width: 100px;
+    height: 100px;
+  }
+  section.gallery div.grid div.photo2 {
+    width: 200px;
+  }
+  section.gallery div.grid div.photo3 {
+    width: 200px;
+  }
+  section.gallery div.grid div.photo4 {
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
